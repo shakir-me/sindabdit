@@ -7,6 +7,10 @@ use App\Http\Controllers\Admin\FacilitiController;
 use App\Http\Controllers\Admin\WorkCategoryController;
 use App\Http\Controllers\Admin\WorkController;
 use App\Http\Controllers\Admin\TeamController;
+use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\ClientCategoryController;
+use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\CategoryController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -78,3 +82,36 @@ require __DIR__.'/auth.php';
   Route::get('edit/team/{id}',[TeamController::class,'edit'])->name('edit.team')->middleware('auth');
   Route::get('delete/team/{id}',[TeamController::class,'delete'])->name('delete.team')->middleware('auth');
   Route::post('update/team/{id}',[TeamController::class,'update'])->name('update.team')->middleware('auth');
+
+       //review  route
+  Route::get('all/review',[ReviewController::class,'all'])->name('all.review')->middleware('auth');
+  Route::get('add/review',[ReviewController::class,'add'])->name('add.review')->middleware('auth');
+  Route::post('store/review',[ReviewController::class,'store'])->name('store.review')->middleware('auth');
+  Route::get('edit/review/{id}',[ReviewController::class,'edit'])->name('edit.review')->middleware('auth');
+  Route::get('delete/review/{id}',[ReviewController::class,'delete'])->name('delete.review')->middleware('auth');
+  Route::post('update/review/{id}',[ReviewController::class,'update'])->name('update.review')->middleware('auth');
+
+         //clientcategory  route
+  Route::get('all/clientcategory',[ClientCategoryController::class,'all'])->name('all.clientcategory')->middleware('auth');
+  Route::get('add/clientcategory',[ClientCategoryController::class,'add'])->name('add.clientcategory')->middleware('auth');
+  Route::post('store/clientcategory',[ClientCategoryController::class,'store'])->name('store.clientcategory')->middleware('auth');
+  Route::get('edit/clientcategory/{id}',[ClientCategoryController::class,'edit'])->name('edit.clientcategory')->middleware('auth');
+  Route::get('delete/clientcategory/{id}',[ClientCategoryController::class,'delete'])->name('delete.clientcategory')->middleware('auth');
+  Route::post('update/clientcategory/{id}',[ClientCategoryController::class,'update'])->name('update.clientcategory')->middleware('auth');
+
+         //client  route
+  Route::get('all/client',[ClientController::class,'all'])->name('all.client')->middleware('auth');
+  Route::get('add/client',[ClientController::class,'add'])->name('add.client')->middleware('auth');
+  Route::post('store/client',[ClientController::class,'store'])->name('store.client')->middleware('auth');
+  Route::get('edit/client/{id}',[ClientController::class,'edit'])->name('edit.client')->middleware('auth');
+  Route::get('delete/client/{id}',[ClientController::class,'delete'])->name('delete.client')->middleware('auth');
+  Route::post('update/client/{id}',[ClientController::class,'update'])->name('update.client')->middleware('auth');
+
+
+           //category  route
+  Route::get('all/category',[CategoryController::class,'all'])->name('all.category')->middleware('auth');
+  Route::get('add/category',[CategoryController::class,'add'])->name('add.category')->middleware('auth');
+  Route::post('store/category',[CategoryController::class,'store'])->name('store.category')->middleware('auth');
+  Route::get('edit/category/{id}',[CategoryController::class,'edit'])->name('edit.category')->middleware('auth');
+  Route::get('delete/category/{id}',[CategoryController::class,'delete'])->name('delete.category')->middleware('auth');
+  Route::post('update/category/{id}',[CategoryController::class,'update'])->name('update.category')->middleware('auth');

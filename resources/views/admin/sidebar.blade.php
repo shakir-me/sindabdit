@@ -42,7 +42,6 @@
               <p>
                 Setting 
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -163,6 +162,106 @@
                   <p>All Team</p>
                 </a>
               </li>
+             
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                CLient Review 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('add/review')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Review</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('all/review')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Review</p>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Our CLient  
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('all/clientcategory')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Client Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('add/client')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Client</p>
+                </a>
+              </li>
+
+                  <li class="nav-item">
+                <a href="{{url('all/client')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>all Client</p>
+                </a>
+              </li>
+             
+             
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Our Service  
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('all/category')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('add/client')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sub Category</p>
+                </a>
+              </li>
+
+                  <li class="nav-item">
+                <a href="{{url('all/client')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Servic</p>
+                </a>
+              </li>
+
+                  <li class="nav-item">
+                <a href="{{url('all/client')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Servic3</p>
+                </a>
+              </li>
+             
              
             </ul>
           </li>
