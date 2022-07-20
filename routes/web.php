@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\Admin\ClientCategoryController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SubCategoryController;
+use App\Http\Controllers\Admin\ServiceController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -108,10 +110,28 @@ require __DIR__.'/auth.php';
   Route::post('update/client/{id}',[ClientController::class,'update'])->name('update.client')->middleware('auth');
 
 
-           //category  route
+//category  route
   Route::get('all/category',[CategoryController::class,'all'])->name('all.category')->middleware('auth');
   Route::get('add/category',[CategoryController::class,'add'])->name('add.category')->middleware('auth');
   Route::post('store/category',[CategoryController::class,'store'])->name('store.category')->middleware('auth');
   Route::get('edit/category/{id}',[CategoryController::class,'edit'])->name('edit.category')->middleware('auth');
   Route::get('delete/category/{id}',[CategoryController::class,'delete'])->name('delete.category')->middleware('auth');
   Route::post('update/category/{id}',[CategoryController::class,'update'])->name('update.category')->middleware('auth');
+
+
+//subcategory  route
+  Route::get('all/subcategory',[SubCategoryController::class,'all'])->name('all.subcategory')->middleware('auth');
+  Route::get('add/subcategory',[SubCategoryController::class,'add'])->name('add.subcategory')->middleware('auth');
+  Route::post('store/subcategory',[SubCategoryController::class,'store'])->name('store.subcategory')->middleware('auth');
+  Route::get('edit/subcategory/{id}',[SubCategoryController::class,'edit'])->name('edit.subcategory')->middleware('auth');
+  Route::get('delete/subcategory/{id}',[SubCategoryController::class,'delete'])->name('delete.subcategory')->middleware('auth');
+  Route::post('update/subcategory/{id}',[SubCategoryController::class,'update'])->name('update.subcategory')->middleware('auth');
+
+  //service  route
+  Route::get('all/service',[ServiceController::class,'all'])->name('all.service')->middleware('auth');
+  Route::get('add/service',[ServiceController::class,'add'])->name('add.service')->middleware('auth');
+  Route::post('store/service',[ServiceController::class,'store'])->name('store.service')->middleware('auth');
+  Route::get('edit/service/{id}',[ServiceController::class,'edit'])->name('edit.service')->middleware('auth');
+  Route::get('delete/service/{id}',[ServiceController::class,'delete'])->name('delete.service')->middleware('auth');
+  Route::post('update/service/{id}',[ServiceController::class,'update'])->name('update.service')->middleware('auth');
+     Route::get('get/category/{category_id}', [ServiceController::class, 'GetCategory']);

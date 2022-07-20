@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="{{asset('backend/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
 
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -325,5 +327,18 @@
                });
            });
    </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+     <script>
+        $(document).ready(function() {
+            $('#summernote').summernote();
+        });
+      </script>
+
+      <script>
+        $(document).ready(function() {
+            $('#summernotetwo').summernote();
+        });
+      </script>
 </body>
 </html>

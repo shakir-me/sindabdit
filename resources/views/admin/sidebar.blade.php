@@ -242,25 +242,20 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('add/client')}}" class="nav-link">
+                <a href="{{url('all/subcategory')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sub Category</p>
                 </a>
               </li>
 
                   <li class="nav-item">
-                <a href="{{url('all/client')}}" class="nav-link">
+                <a href="{{url('all/service')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Add Servic</p>
+                  <p>Add Service</p>
                 </a>
               </li>
 
-                  <li class="nav-item">
-                <a href="{{url('all/client')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All Servic3</p>
-                </a>
-              </li>
+                
              
              
             </ul>
