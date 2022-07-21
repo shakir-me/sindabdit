@@ -29,3 +29,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
  Route::get('review',[HomeController::class,'Review']);
  Route::get('client_category',[HomeController::class,'ClientCategory']);
  Route::post('contact/store',[HomeController::class,'ContactStore']);
+  Route::get('about',[HomeController::class,'About']);

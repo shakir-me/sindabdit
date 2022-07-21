@@ -13,6 +13,11 @@ use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\BlogCategoryController;
+use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CourseCategoryController;
+use App\Http\Controllers\Admin\CourseSubCategoryController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -134,4 +139,51 @@ require __DIR__.'/auth.php';
   Route::get('edit/service/{id}',[ServiceController::class,'edit'])->name('edit.service')->middleware('auth');
   Route::get('delete/service/{id}',[ServiceController::class,'delete'])->name('delete.service')->middleware('auth');
   Route::post('update/service/{id}',[ServiceController::class,'update'])->name('update.service')->middleware('auth');
-     Route::get('get/category/{category_id}', [ServiceController::class, 'GetCategory']);
+  Route::get('get/category/{category_id}', [ServiceController::class, 'GetCategory']);
+
+
+    //about  route
+  Route::get('all/about',[AboutController::class,'all'])->name('all.about')->middleware('auth');
+  Route::get('add/about',[AboutController::class,'add'])->name('add.about')->middleware('auth');
+  Route::post('store/about',[AboutController::class,'store'])->name('store.about')->middleware('auth');
+  Route::get('edit/about/{id}',[AboutController::class,'edit'])->name('edit.about')->middleware('auth');
+  Route::get('delete/about/{id}',[AboutController::class,'delete'])->name('delete.about')->middleware('auth');
+  Route::post('update/about/{id}',[AboutController::class,'update'])->name('update.about')->middleware('auth');
+ 
+
+
+    //blogcategory  route
+  Route::get('all/blogcategory',[BlogCategoryController::class,'all'])->name('all.blogcategory')->middleware('auth');
+  Route::get('add/blogcategory',[BlogCategoryController::class,'add'])->name('add.blogcategory')->middleware('auth');
+  Route::post('store/blogcategory',[BlogCategoryController::class,'store'])->name('store.blogcategory')->middleware('auth');
+  Route::get('edit/blogcategory/{id}',[BlogCategoryController::class,'edit'])->name('edit.blogcategory')->middleware('auth');
+  Route::get('delete/blogcategory/{id}',[BlogCategoryController::class,'delete'])->name('delete.blogcategory')->middleware('auth');
+  Route::post('update/blogcategory/{id}',[BlogCategoryController::class,'update'])->name('update.blogcategory')->middleware('auth');
+ 
+
+    //blog  route
+  Route::get('all/blog',[BlogController::class,'all'])->name('all.blog')->middleware('auth');
+  Route::get('add/blog',[BlogController::class,'add'])->name('add.blog')->middleware('auth');
+  Route::post('store/blog',[BlogController::class,'store'])->name('store.blog')->middleware('auth');
+  Route::get('edit/blog/{id}',[BlogController::class,'edit'])->name('edit.blog')->middleware('auth');
+  Route::get('delete/blog/{id}',[BlogController::class,'delete'])->name('delete.blog')->middleware('auth');
+  Route::post('update/blog/{id}',[BlogController::class,'update'])->name('update.blog')->middleware('auth');
+
+
+      //coursecategory  route
+  Route::get('all/coursecategory',[CourseCategoryController::class,'all'])->name('all.coursecategory')->middleware('auth');
+  Route::get('add/coursecategory',[CourseCategoryController::class,'add'])->name('add.coursecategory')->middleware('auth');
+  Route::post('store/coursecategory',[CourseCategoryController::class,'store'])->name('store.coursecategory')->middleware('auth');
+  Route::get('edit/coursecategory/{id}',[CourseCategoryController::class,'edit'])->name('edit.coursecategory')->middleware('auth');
+  Route::get('delete/coursecategory/{id}',[CourseCategoryController::class,'delete'])->name('delete.coursecategory')->middleware('auth');
+  Route::post('update/coursecategory/{id}',[CourseCategoryController::class,'update'])->name('update.coursecategory')->middleware('auth');
+
+        //coursesubcategory  route
+  Route::get('all/coursesubcategory',[CourseSubCategoryController::class,'all'])->name('all.coursesubcategory')->middleware('auth');
+  Route::get('add/coursesubcategory',[CourseSubCategoryController::class,'add'])->name('add.coursesubcategory')->middleware('auth');
+  Route::post('store/coursesubcategory',[CourseSubCategoryController::class,'store'])->name('store.coursesubcategory')->middleware('auth');
+  Route::get('edit/coursesubcategory/{id}',[CourseSubCategoryController::class,'edit'])->name('edit.coursesubcategory')->middleware('auth');
+  Route::get('delete/coursesubcategory/{id}',[CourseSubCategoryController::class,'delete'])->name('delete.coursesubcategory')->middleware('auth');
+  Route::post('update/coursesubcategory/{id}',[CourseSubCategoryController::class,'update'])->name('update.coursesubcategory')->middleware('auth');
+ 
+

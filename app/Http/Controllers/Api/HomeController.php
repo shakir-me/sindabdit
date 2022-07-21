@@ -11,6 +11,7 @@ use App\Models\WorkCategory;
 use App\Models\Team;
 use App\Models\Review;
 use App\Models\ClientCategory;
+use App\Models\About;
 use DB;
 class HomeController extends Controller
 {
@@ -74,6 +75,13 @@ class HomeController extends Controller
         return response([
            'messege'=>"Contact Added Successfully"
         ],200);
+    }
+
+
+    public function About()
+    {
+       $about=About::all();
+       return response()->json($about); 
     }
 
 

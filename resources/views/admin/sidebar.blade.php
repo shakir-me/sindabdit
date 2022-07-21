@@ -255,6 +255,102 @@
                 </a>
               </li>
 
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Our Course  
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('all/coursecategory')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('all/coursesubcategory')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sub Category</p>
+                </a>
+              </li>
+
+                  <li class="nav-item">
+                <a href="{{url('all/service')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Service</p>
+                </a>
+              </li>
+
+                
+             
+             
+            </ul>
+          </li>
+
+
+            <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                About Us  
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('all/about')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add About</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('add/about')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All About</p>
+                </a>
+              </li>             
+            </ul>
+          </li>
+
+
+
+            <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Blog  
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('all/blogcategory')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Category Blog</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('add/blog')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Blog</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="{{url('all/blog')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Blog</p>
+                </a>
+              </li>
+
+          
+
                 
              
              
